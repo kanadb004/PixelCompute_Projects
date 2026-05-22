@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanad - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="menu-btn" class="mobile-btn">☰</button>
+
+    <aside id="sidebar" class="sidebar">
+        <img src="kanad_profile.png" alt="Kanad" class="profile-pic">
+        <h2>Kanad</h2>
+        <p>Web Developer</p>
+        
+        <div class="nav-links">
+            <a href="#intro">1.0 INTRO</a>
+            <a href="#work">2.0 WORK</a>
+            <a href="#writings">3.0 WRITINGS</a>
+            <a href="#contact">4.0 CONTACT</a>
+        </div>
+        
+        <div class="social-icons">
+            <a href="#"><img src="email.png" alt="Email"></a>
+            <a href="#"><img src="github.png" alt="GitHub"></a>
+            <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <div id="intro" class="section intro">
+            <p>Hello my name is Kanad</p>
+            <h1>I code beautiful websites.</h1>
+            <p>I'm a full stack web developer based out of India. Welcome to my portfolio!</p>
+        </div>
+
+        <div id="work" class="section">
+            <h2 class="section-title">My work</h2>
+            <div class="card">
+                <img src="battleship.png" alt="Battleship" class="card-img">
+                <div class="card-details">
+                    <h3>Battleship Game</h3>
+                    <p>The classic Battleship game that's written using HTML, CSS and vanilla JS. Give it a go!</p>
+                    <a href="#" class="link">view in neetocode ↗</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="musicapp.png" alt="Music App" class="card-img">
+                <div class="card-details">
+                    <h3>Music Streaming App</h3>
+                    <p>A music streaming app built using React JS and API to fetch tracks.</p>
+                    <a href="#" class="link">view in neetocode ↗</a>
+                </div>
+            </div>
+            <button class="btn">VIEW ALL</button>
+        </div>
+
+        <div id="writings" class="section">
+            <h2 class="section-title">Writings</h2>
+            <div class="grid-container">
+                <div class="card grid-card">
+                    <img src="bonjour.png" alt="Bonjour">
+                    <h3>my top 10 go to typefaces</h3>
+                    <p>Kanad <br> 1 min read</p>
+                </div>
+                <div class="card grid-card">
+                    <img src="palettes.png" alt="Palettes">
+                    <h3>Color palettes that I cannot live without</h3>
+                    <p>Kanad <br> 1 min read</p>
+                </div>
+            </div>
+            <button class="btn">VIEW ALL</button>
+        </div>
+
+        <div id="contact" class="section contact">
+            <h2 class="section-title">Get in touch with me</h2>
+            <p>Have an opportunity for me to help you with anything? Feel free to schedule a call with me</p>
+            <button class="btn">Book a Session</button>
+        </div>
+
+        <footer>
+            <p class="footer-name">Kanad</p>
+            <div class="footer-links">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Email</a>
+                <a href="#">Schedule a call</a>
+                <a href="#">Resume</a>
+                <a href="#">Blog</a>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const sidebar = document.getElementById('sidebar');
+        menuBtn.addEventListener('click', () => {
+            sidebar.style.display = sidebar.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h1>SNEAKERZONE</h1>
+        <nav class="categories">
+            <a href="#">Men</a> 
+            <a href="#">Women</a> 
+            <a href="#">Kids</a>
+        </nav>
+        <input type="search" placeholder="Search">
+        <img class="icon" src="cart.png" alt="Cart">
+    </header>
+
+    <main class="container">
+        <aside class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#">Lifestyle</a></li>
+                <li><a href="#">Basketball</a></li>
+                <li><a href="#">Jordan</a></li>
+                <li><a href="#">Skate</a></li>
+            </ul>
+        </aside>
+
+        <div class="grid">
+            <a href="#detail" class="card">
+                <img src="kanad_profile.png" alt="Shoe" style="border-radius: 5px;">
+                <h3>AeroMax Flex</h3>
+                <p>₹ 10,499</p>
+            </a>
+            <a href="#detail" class="card">
+                <img src="kanad_profile.png" alt="Shoe" style="border-radius: 5px;">
+                <h3>Urban Stride</h3>
+                <p>₹ 12,999</p>
+            </a>
+            <a href="#detail" class="card">
+                <img src="kanad_profile.png" alt="Shoe" style="border-radius: 5px;">
+                <h3>Velocity X</h3>
+                <p>₹ 11,999</p>
+            </a>
+        </div>
+    </main>
+
+    <section id="detail" class="detail-view">
+        <div class="gallery">
+            <img src="kanad_profile.png" alt="Shoe" style="height: 30%; width: 50%; border-radius: 5px;">
+            <img src="kanad_profile.png" alt="Shoe" style="height: 30%; width: 50%; border-radius: 5px;">
+        </div>
+        <div class="info">
+            <h2>Action Hyper High</h2>
+            <h2>Side View</h2>
+            <p>Men's Shoes</p>
+            <p>MRP: ₹ 13,995</p>
+            
+            <div class="sizes">
+                <button class="btn">UK 10</button>
+                <button class="btn">UK 10.5</button>
+                <button class="btn">UK 6</button>
+                <button class="btn">UK 11</button>
+                <button class="btn">UK 9.5</button>
+                <button class="btn">UK 11.5</button>
+            </div>
+            
+            <div class="actions">
+                <button class="btn primary">Add to Bag</button>
+                <button class="btn">Favorite</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
