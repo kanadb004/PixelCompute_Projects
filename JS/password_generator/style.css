@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://ik.imagekit.io/d9mvewbju/BBA-NeetoSite-and-Project-Resources/password-generator-container_tarSlyutN.png?updatedAt=1730755103984');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 85%;
+}
+
+.generator-section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.generator-section h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+.password-display-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.password-input {
+    flex: 0 0 70%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 10px 15px;
+    color: #333;
+    font-weight: 500;
+}
+
+.password-input::placeholder {
+    color: #999;
+}
+
+.copy-button {
+    flex: 1;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.copy-button:hover {
+    background-color: #45a049;
+}
+
+.slider-section {
+    margin-bottom: 30px;
+}
+
+.slider-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.slider-label {
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+}
+
+#lengthValue {
+    font-size: large;
+}
+
+.slider-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.character-count {
+    font-size: 14px;
+    color: #555;
+    white-space: nowrap;
+}
+
+.character-count strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.checkboxes-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 15px;
+}
+
+.checkbox-label {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #555;
+    flex: 0 1 auto;
+}
+
+.alert {
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    z-index: 1000;
+    display: none;
+}
+
+.alert-success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.alert-error {
+    background-color: #e74c3c;
+    color: white;
+    bottom: 40px;
+}
+
+.alert.show {
+    display: block;
+    animation: slideIn 0.3s ease-in-out;
+}
+
+.info-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.info-block {
+    flex: 1;
+    min-width: 250px;
+    max-width: calc(50% - 10px);
+}
+
+.info-block h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.info-block ul {
+    text-align: left;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.info-block li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+}

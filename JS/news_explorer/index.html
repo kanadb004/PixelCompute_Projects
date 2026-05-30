@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="search-section">
+        <input 
+          type="text" 
+          id="searchInput" 
+          class="search-input" 
+          placeholder="Search for News"
+          aria-label="Search news articles"
+        >
+      </div>
+
+      <h1>Top stories for you</h1>
+
+      <div class="tags-section">
+        <button class="tag-button tag-active" data-category="all" aria-label="Show all news">All</button>
+        <button class="tag-button" data-category="business" aria-label="Show business news">Business</button>
+        <button class="tag-button" data-category="politics" aria-label="Show politics news">Politics</button>
+        <button class="tag-button" data-category="sport" aria-label="Show sport news">Sports</button>
+        <button class="tag-button" data-category="entertainment" aria-label="Show entertainment news">Entertainment</button>
+        <button class="tag-button" data-category="tech" aria-label="Show tech news">Tech</button>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="news-grid" id="newsGrid"></section>
+
+      <div class="show-more-container">
+        <button id="showMoreBtn" class="show-more-btn">Show More</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="news_explorer_project_data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

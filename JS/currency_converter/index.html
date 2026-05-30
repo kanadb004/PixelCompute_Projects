@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Currency Converter</h1>
+
+            <div class="input-group">
+                <label for="amount">Enter amount</label>
+                <input type="number" id="amount" placeholder="100" required>
+            </div>
+
+            <div class="currency-section">
+                <div class="dropdown-group">
+                    <select id="fromCurrency">
+                        <option value="">USD - United States Dollar</option>
+                        <option value="">INR - Indian Rupee</option>
+                    </select>
+                </div>
+
+                <div class="to-label">TO</div>
+
+                <div class="dropdown-group">
+                    <select id="toCurrency">
+                        <option value="">USD - United States Dollar</option>
+                        <option value="">INR - Indian Rupee</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="convertBtn" class="convert-btn">Convert</button>
+
+            <div id="result" class="result-message">100 USD = 8,407.52 INR</div>
+            <div id="error" class="error-message">An error occurred, please try again later</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
